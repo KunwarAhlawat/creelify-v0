@@ -1,0 +1,504 @@
+//topbar style
+.topbar {
+    background-color: $secondary;
+    padding: 4px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+
+        .social-icons {
+            i {
+                margin-right: 4px;
+                color: $primary;
+
+                &:hover {
+                    color: $info;
+                }
+            }
+        }
+
+        .topbar-content {
+            a {
+                color: $primary;
+                margin-right: 12px;
+
+                &:hover {
+                    color: $info;
+                }
+
+                i {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
+
+//megamenu style
+/* Desktop Mega Menu Css Start */
+.header-section {
+    // background-color: $section-bg-alt-2;
+    box-shadow: $shadow2;
+    border-bottom: $border1 ;
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .logo {
+            img {
+                width: 180px;
+
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin-right: 20px;
+                font-weight: $bold;
+                list-style: none;
+
+                a {
+                    color: $dark;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+
+                    &:active {
+                        color: $info;
+                    }
+                }
+            }
+        }
+
+        .nav-cta {
+            padding: 10px 0px;
+        }
+    }
+
+    /* css For Service Megamenu */
+    .megamenu {
+        min-width: 800px;
+        position: absolute;
+        z-index: 9999;
+        box-shadow: $shadow1;
+        border: $border1;
+        background-color: $section-bg-alt-2;
+
+        /* box-shadow: 0px 10px 2px 3px lightblue; */
+        top: 120%;
+        left: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        padding: 20px;
+
+        .megamenu-item {
+            margin-top: 8px;
+
+            span {
+                font-size: 0.875rem;
+                font-weight: $bold;
+                color: $secondary;
+
+                i {
+                    color: $secondary;
+                    margin-right: 4px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-left: 0px;
+
+                align-items: start;
+                margin-top: 8px;
+
+                li {
+                    margin-bottom: 4px;
+
+                    a {
+                        font-size: $small-font;
+                        color: $dark;
+                    }
+
+                    a:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .megamenu-item-2 {
+            margin-top: 8px;
+
+            span {
+                font-size: $small-font;
+                font-weight: $bold;
+                color: $secondary;
+
+                i {
+                    margin-right: 4px;
+                    color: $secondary;
+                }
+            }
+
+            .megamenu-subitem {
+                display: flex;
+                flex-direction: row;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0px;
+                    align-items: start;
+                    margin-top: 8px;
+
+                    li {
+                        margin-bottom: 4px;
+
+                        a {
+                            font-size: $small-font;
+                            color: $dark;
+                        }
+
+                        a:hover {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                &:hover .megamenu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+        }
+    }
+
+    /* css For solution Megamenu */
+    .solution-megamenu {
+        position: absolute;
+        z-index: 9999;
+        box-shadow: $shadow1;
+        border: $border1;
+        background-color: $section-bg-alt-2;
+
+        /* box-shadow: 0px 10px 2px 3px lightblue; */
+        top: 120%;
+        left: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        padding: 20px;
+
+        .solution-megamenu-item {
+            margin-top: 8px;
+
+            span {
+                font-size: $small-font;
+                font-weight: $bold;
+                color: $secondary;
+
+                i {
+                    margin-right: 4px;
+                    color: $secondary;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-left: 0px;
+
+                align-items: start;
+                margin-top: 8px;
+
+                li {
+                    margin-bottom: 4px;
+
+                    a {
+                        font-size: $small-font;
+                        color: $dark;
+                    }
+
+                    a:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                &:hover .solution-megamenu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+        }
+    }
+
+    /* css For solution Megamenu */
+    .resource-megamenu {
+        position: absolute;
+        z-index: 9999;
+        box-shadow: $shadow1;
+        border: $border1;
+        background-color: $section-bg-alt-2;
+
+        /* box-shadow: 0px 10px 2px 3px lightblue; */
+        top: 120%;
+        left: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        padding: 20px;
+
+        .resource-megamenu-item {
+            margin-top: 8px;
+
+            span {
+                font-size: $small-font;
+                font-weight: $bold;
+                color: $secondary;
+
+                i {
+                    margin-right: 4px;
+                    color: $secondary;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-left: 0px;
+
+                align-items: start;
+                margin-top: 8px;
+
+                li {
+                    margin-bottom: 4px;
+
+                    a {
+                        font-size: $small-font;
+                        color: $dark;
+                    }
+
+                    a:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                &:hover .resource-megamenu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Offcanvas Menu Css Start */
+.ticon {
+    font-size: 40px;
+    /* margin: 10px; */
+    cursor: pointer;
+}
+
+.close {
+    font-size: 40px;
+    /* top: 0; */
+    cursor: pointer;
+    /* position: absolute;
+      right: 10px; */
+}
+
+//Offcanvas Style Start
+
+.offcanvas-menu-section {
+    box-shadow: $shadow2;
+    background-color: $light;
+    border-bottom: $border1 ;
+
+    .offcanvas-menu-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+
+
+
+
+        .offcanvas-logo {
+            img {
+                width: 120px;
+            }
+
+        }
+
+        .offcanvas-triger {
+            i {
+                font-size: 16px;
+                color: $primary;
+            }
+
+        }
+
+        a {
+            color: $light;
+            padding: 5px;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        .offcanvas-menu-content {
+            width: 100%;
+            height: 100vh;
+            z-index: 9999;
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            overflow-y: auto;
+            background-color: $section-bg-alt-2;
+            // margin-top: 16px;
+            padding: 0px 16px;
+
+            .m-accordion {
+                margin-top: 10px;
+
+                .m-accordion-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        margin-left: 8px;
+                        color: $dark;
+                    }
+
+                    p {
+                        font-weight: $bold;
+                        color: $dark;
+                    }
+
+                }
+
+                .m-accordion-item {
+                    background-color: $light;
+                    color: $dark;
+                    box-shadow: $shadow1;
+                    border: $border1;
+                    margin-top: 8px;
+                    padding: 0;
+                    cursor: pointer;
+
+                    .m-accordion-header {
+                        padding: 5px;
+
+                        p {
+                            margin: 0px;
+                            color: $dark;
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .m-accordion-content {
+                        display: none;
+                        padding: 0px 20px;
+
+                        hr {
+                            color: $secondary;
+                        }
+
+                        span {
+                            color: $secondary;
+
+                            margin-left: 4px;
+
+                        }
+
+                        ul {
+                            margin-bottom: 10px;
+                            padding: 0;
+
+
+                            li {
+                                margin-top: 8px;
+                                margin-left: 16px;
+                                list-style: none;
+
+                                a {
+                                    color: $dark;
+
+                                    &:hover {
+                                        color: $secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .m-accordion-item.active .m-accordion-content {
+                    display: block;
+                }
+            }
+        }
+
+        .show-menu {
+            left: 0%;
+        }
+    }
+}
+
+.offcanvas-menu-section.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
