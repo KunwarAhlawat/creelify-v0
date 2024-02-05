@@ -15,6 +15,16 @@
     letter-spacing: -1px;
 }
 
+.section_title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    p {
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+}
+
 .section-heading-light {
     color: $light;
     font-weight: $bold;
@@ -65,5 +75,5 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
 }
