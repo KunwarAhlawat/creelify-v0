@@ -430,17 +430,17 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #3498db;
-  --bs-secondary: #2ecc71;
-  --bs-success: #27ae60;
+  --bs-primary: #1E4C40;
+  --bs-secondary: #A8C28C;
+  --bs-success: #2ECC71;
   --bs-info: #3498db;
   --bs-warning: #f39c12;
   --bs-danger: #e74c3c;
   --bs-light: #ecf0f1;
   --bs-dark: #2c3e50;
-  --bs-primary-rgb: 52, 152, 219;
-  --bs-secondary-rgb: 46, 204, 113;
-  --bs-success-rgb: 39, 174, 96;
+  --bs-primary-rgb: 30, 76, 64;
+  --bs-secondary-rgb: 168, 194, 140;
+  --bs-success-rgb: 46, 204, 113;
   --bs-info-rgb: 52, 152, 219;
   --bs-warning-rgb: 243, 156, 18;
   --bs-danger-rgb: 231, 76, 60;
@@ -469,8 +469,8 @@ progress {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #3498db;
-  --bs-link-hover-color: #2a7aaf;
+  --bs-link-color: #1E4C40;
+  --bs-link-hover-color: #183d33;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -553,19 +553,33 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #d6eaf8;
-  --bs-table-border-color: #c1d3df;
-  --bs-table-striped-bg: #cbdeec;
+  --bs-table-bg: #d2dbd9;
+  --bs-table-border-color: #bdc5c3;
+  --bs-table-striped-bg: #c8d0ce;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #c1d3df;
+  --bs-table-active-bg: #bdc5c3;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c6d8e5;
+  --bs-table-hover-bg: #c2cbc9;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
 .table-secondary {
+  --bs-table-color: #000;
+  --bs-table-bg: #eef3e8;
+  --bs-table-border-color: #d6dbd1;
+  --bs-table-striped-bg: #e2e7dc;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #d6dbd1;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #dce1d7;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+
+.table-success {
   --bs-table-color: #000;
   --bs-table-bg: #d5f5e3;
   --bs-table-border-color: #c0ddcc;
@@ -574,20 +588,6 @@ progress {
   --bs-table-active-bg: #c0ddcc;
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #c5e3d2;
-  --bs-table-hover-color: #000;
-  color: var(--bs-table-color);
-  border-color: var(--bs-table-border-color);
-}
-
-.table-success {
-  --bs-table-color: #000;
-  --bs-table-bg: #d4efdf;
-  --bs-table-border-color: #bfd7c9;
-  --bs-table-striped-bg: #c9e3d4;
-  --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bfd7c9;
-  --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c4ddce;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -870,17 +870,17 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #3498db;
-  --bs-secondary: #2ecc71;
-  --bs-success: #27ae60;
+  --bs-primary: #1E4C40;
+  --bs-secondary: #A8C28C;
+  --bs-success: #2ECC71;
   --bs-info: #3498db;
   --bs-warning: #f39c12;
   --bs-danger: #e74c3c;
   --bs-light: #ecf0f1;
   --bs-dark: #2c3e50;
-  --bs-primary-rgb: 52, 152, 219;
-  --bs-secondary-rgb: 46, 204, 113;
-  --bs-success-rgb: 39, 174, 96;
+  --bs-primary-rgb: 30, 76, 64;
+  --bs-secondary-rgb: 168, 194, 140;
+  --bs-success-rgb: 46, 204, 113;
   --bs-info-rgb: 52, 152, 219;
   --bs-warning-rgb: 243, 156, 18;
   --bs-danger-rgb: 231, 76, 60;
@@ -909,8 +909,8 @@ progress {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #3498db;
-  --bs-link-hover-color: #2a7aaf;
+  --bs-link-color: #1E4C40;
+  --bs-link-hover-color: #183d33;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -922,18 +922,18 @@ progress {
 }
 
 .text-bg-primary {
-  color: #000 !important;
-  background-color: RGBA(52, 152, 219, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(30, 76, 64, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(46, 204, 113, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(168, 194, 140, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
   color: #000 !important;
-  background-color: RGBA(39, 174, 96, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(46, 204, 113, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-info {
@@ -962,24 +962,24 @@ progress {
 }
 
 .link-primary {
-  color: #3498db !important;
+  color: #1E4C40 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #5dade2 !important;
+  color: #183d33 !important;
 }
 
 .link-secondary {
-  color: #2ecc71 !important;
+  color: #A8C28C !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #58d68d !important;
+  color: #b9cea3 !important;
 }
 
 .link-success {
-  color: #27ae60 !important;
+  color: #2ECC71 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #52be80 !important;
+  color: #58d68d !important;
 }
 
 .link-info {
@@ -5289,44 +5289,44 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #3498db;
+  color: #1E4C40;
 }
 
 .has-primary-background-color {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: #1E4C40;
+  border-color: #1E4C40;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-primary-color {
-  color: #3498db;
+  color: #1E4C40;
 }
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #2ecc71;
+  color: #A8C28C;
 }
 
 .has-secondary-background-color {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
+  background-color: #A8C28C;
+  border-color: #A8C28C;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-secondary-color {
-  color: #2ecc71;
+  color: #A8C28C;
 }
 
 .has-success-color,
 .has-success-color:visited {
-  color: #27ae60;
+  color: #2ECC71;
 }
 
 .has-success-background-color {
-  background-color: #27ae60;
-  border-color: #27ae60;
+  background-color: #2ECC71;
+  border-color: #2ECC71;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-success-color {
-  color: #27ae60;
+  color: #2ECC71;
 }
 
 .has-info-color,

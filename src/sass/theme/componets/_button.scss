@@ -1,6 +1,6 @@
 .btn-cta {
-    background-color: $info;
-    color: black;
+    background-color: $accent;
+    color: $light;
     font-size: $small-font;
     text-transform: uppercase;
     font-weight: $bold;
@@ -22,9 +22,9 @@
 .btn-cta-w100 {
     width: 100%;
     text-align: center;
-    background-color: $info;
+    background-color: $accent;
     font-size: $small-font;
-    color: $dark;
+    color: $light;
     text-transform: uppercase;
     font-weight: $bold;
     padding: 10px 20px;
